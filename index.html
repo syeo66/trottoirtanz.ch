@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trottoirtanz</title>
+    <style>
+      html {
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        padding: 0;
+        margin: 0;
+        background-color: #111;
+        font-family: sans-serif;
+      }
+
+      #hero {
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        place-items: center;
+        grid-template: 1fr / 1fr;
+      }
+
+      #hero > * {
+        grid-column: 1 / 1;
+        grid-row: 1 / 1;
+      }
+
+      #hero h1 {
+        color: #fff;
+        font-size: 4rem;
+        text-align: center;
+        text-shadow: 0 0 10px #000;
+        font-family: serif;
+      }
+
+      #hero img {
+      }
+
+      img {
+        min-width: 100%;
+        object-fit: cover;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div id="hero">
+        <img src="/hero.jpg" width="100" />
+        <h1>Trottoirtanz</h1>
+      </div>
+    </div>
+  </body>
+</html>
