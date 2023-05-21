@@ -10,7 +10,7 @@ FROM nginx as server
 
 EXPOSE 80
 
-ENV REDEPLOY 1
+ENV REDEPLOY 2
 
 COPY --from=node /usr/src/app/dist /usr/share/nginx/html
 
